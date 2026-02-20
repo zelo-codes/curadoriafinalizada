@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Seleção de imóveis à venda no Cambuí (Campinas) até R$ 350 mil. Opções escolhidas com critério para facilitar sua decisão." />
+  <title>Curadoria Cambuí | Imóveis Cambuí</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="primeiroimovel.css" />
+  <link rel="icon" href="testelogo.png" type="image/png" />
+</head>
+
+<body>
+  <!-- Top progress bar -->
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Voltar ao topo">
+        <img src="testelogo.png" alt="Zelo Imóveis" class="brand__logo" />
+        <div class="brand__text">
+          <span>Campanha: <strong>Curadoria Cambuí</strong></span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Abrir menu</span>
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#beneficios">Por quê</a></li>
+          <li><a href="#imoveis">Imóveis</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li class="nav__cta">
+            <a class="btn-ajuste" href="https://api.whatsapp.com/send?phone=5519981611842&amp;text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20a%20respeito%20da%20campanha%20da%20curadoria%20do%20Cambu%C3%AD.">Quero minha seleção</a>            
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            Campanha de curadoria
+          </div>
+
+          <h1>
+            <span class="accent">Cambuí até R$400 mil existe.</span> Você só não estava vendo os imóveis certos.
+          </h1>
+
+          <p class="lead">
+            Selecionamos apartamentos no Cambuí com preço coerente, condomínio viável e potencial real de valorização.
+            <strong>Sem anúncios inflados. Sem perda de tempo.</strong>
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#imoveis">
+              👇 Ver imóveis da curadoria
+              <span class="btn__icon" aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn--ghost"
+              href="https://api.whatsapp.com/send?phone=5519981611842&amp;text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20a%20respeito%20da%20campanha%20da%20curadoria%20do%20Cambu%C3%AD."
+              target="_blank" rel="noopener">
+              Conversar pelo WhatsApp
+            </a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <strong>Margem de R$ 350 mil</strong>
+              <span>Seleção filtrada para custo benefício.</span>
+            </div>
+            <div class="trust__item">
+              <strong>Imóveis de Ouro</strong>
+              <span>Opções filtradas e destacadas.</span>
+            </div>
+            <div class="trust__item">
+              <strong>Curadoria objetiva</strong>
+              <span>Opções filtradas e selecionadas.</span>
+            </div>
+          </div>
+
+          <small class="note">Um lar no Cambuí? Veja mais logo abaixo.</small>
+        </div>
+
+        <div class="hero__media">
+          <div class="mediaCard">
+            <!-- <a href="https://www.zeloimoveis.com/" target="_blank" rel="noopener"> -->
+              <img
+                src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=80"
+                alt="Apartamento moderno em área urbana, referência para imóveis na curadoria do Cambuí"
+                loading="lazy"
+              />
+            <!-- </a> -->
+            <div class="mediaCard__overlay">
+              <div class="mediaCard__stat">
+                <strong class="count" data-count="18">0</strong>
+                <span>opções na curadoria</span>
+              </div>
+              <div class="mediaCard__stat">
+                <strong class="count" id="ouroCount" data-count="6">0</strong>
+                <span>imóveis de ouro 🏅</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating">
+            <div class="floating__icon" aria-hidden="true">💰</div>
+            <div>
+              <strong>Cambuí no seu bolso</strong>
+              <p>Filtro por localização + custo fixo (condomínio/IPTU).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- SESSÃO SOBRE O QUE É A PROCURADORIA -->
+<section class="section section--curadoria" id="curadoria">
+  <div class="container">
+    <div class="section__head">
+      <h2>O que é a Curadoria Zelo</h2>
+      <p>
+        Nós fazemos o trabalho que ninguém faz. Antes de um imóvel entrar aqui, nós analisamos:
+      </p>
+    </div>
+
+    <div class="grid grid--4">
+      <article class="card card--glass card--hover">
+        <div class="card__icon" aria-hidden="true">💵</div>
+        <h3>Preço coerente</h3>
+        <p>✔Se o valor faz sentido com o mercado (sem “preço emocional”).</p>
+      </article>
+
+      <article class="card card--glass card--hover">
+        <div class="card__icon" aria-hidden="true">🏢</div>
+        <h3>Condomínio viável</h3>
+        <p>✔Se o condomínio não compromete o orçamento no custo mensal.</p>
+      </article>
+
+      <article class="card card--glass card--hover">
+        <div class="card__icon" aria-hidden="true">📍</div>
+        <h3>Localização no bairro</h3>
+        <p>✔Se a localização faz sentido dentro do Cambuí (rua, entorno e rotina).</p>
+      </article>
+
+      <article class="card card--glass card--hover">
+        <div class="card__icon" aria-hidden="true">📈</div>
+        <h3>Vale o investimento</h3>
+        <p>✔Se o imóvel realmente “fecha a conta”: liquidez, revenda e potencial.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section" id="beneficios">
+      <div class="container">
+        <div class="section__head">
+          <h2>Qual o objetivo da proposta?</h2>
+          <p>
+            O Cambuí reúne boas opções, mas também custos que merecem atenção: preços, condomínio e estado do imóvel.
+            Nossa seleção é clara e com foco em imóveis até <strong>R$ 350 mil</strong>.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card card--hover">
+            <div class="card__icon" aria-hidden="true">🎯</div>
+            <h3>Preço que cabe</h3>
+            <p>Seleção de imóveis na margem de <strong>R$ 350 mil</strong>, para organizar sua busca.</p>
+          </article>
+
+          <article class="card card--hover">
+            <div class="card__icon" aria-hidden="true">🏢</div>
+            <h3>Custo fixo considerado</h3>
+            <p>Condomínio e demais custos são analisados para evitar surpresas.</p>
+          </article>
+
+          <article class="card card--hover">
+            <div class="card__icon" aria-hidden="true">🏅</div>
+            <h3>Imóveis de Ouro</h3>
+            <p>Opções destacadas pelo equilíbrio entre custo-benefício, liquidez e localização.</p>
+          </article>
+        </div>
+
+        <div class="metrics">
+          <div class="metrics__item">
+            <strong>+ Assertividade</strong>
+            <span>menos visitas sem foco</span>
+          </div>
+          <div class="metrics__item">
+            <strong>+ Segurança</strong>
+            <span>análise de documentos e custos</span>
+          </div>
+          <div class="metrics__item">
+            <strong>+ Liquidez</strong>
+            <span>imóvel com boa liquidez</span>
+          </div>
+          <div class="metrics__item">
+            <strong>+ Clareza</strong>
+            <span>para decidir com segurança</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMÓVEIS -->
+    <section class="section section--soft" id="imoveis">
+      <div class="container">
+        <div class="section__head">
+          <h2>Imóveis da campanha</h2>
+          <p>
+            Imóveis selecionados diretamente da Zelo para você que busca um imóvel custo-benefício sob uma região privilegiada.
+          </p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtros de imóveis">
+          <button class="chip is-active" type="button" data-filter="all">Todos</button>
+          <button class="chip" type="button" data-filter="ouro">Imóveis de Ouro 🏅</button>
+          <button class="chip" type="button" data-filter="ate350">Até R$ 350k</button>   
+          <button class="chip" type="button" data-filter="acima350">Acima de R$ 350k</button>
+
+          <!-- <button class="chip" type="button" data-filter="apto">Apartamentos</button> -->
+          <button class="chip" type="button" data-filter="kitnet">Kitnet</button>
+          <button class="chip" type="button" data-filter="1d">1 dorm</button>
+          <button class="chip" type="button" data-filter="2d">2 dorms</button>
+        </div>
+
+        <!-- CARROSSEL -->
+        <div class="carousel" aria-label="Carrossel de imóveis">
+          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Anterior" data-carousel-prev>‹</button>
+
+          <div class="carousel__viewport" id="listingViewport">
+            <div class="carousel__track listingGrid" id="listingGrid">
+
+              <!-- CARD 1 -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56608"
+                 data-tags="apto 1d ate350 cambui"
+                 data-title="Apartamento • confortável"
+                 data-neighborhood="Centro • Campinas"
+                 data-price="R$ 320.000"
+                 data-features="Apartamento|organizado|próximo comércio|boa locação"
+                 data-img="imovel1.png"
+                 data-desc="Apartamento bem localizado. Boa opção pra morar ou investir (liquidez/locação)."
+                 aria-label="Abrir imóvel: Apartamento confortável">
+                <div class="listing__media">
+                  <img src="imovel1.png" alt="Ambiente integrado de studio" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apartamento • confortável</h3>
+                    <span class="price">R$ 320.000</span>
+                  </div>
+                  <p class="muted">Centro • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>2 banheiros</li>
+                    <li>1 vaga</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+              <!-- CARD 2 -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/10653"
+                 data-tags="apto 1d ate350 cambui"
+                 data-title="Apto 1 dorm • planta eficiente"
+                 data-neighborhood="Bosque • Campinas"
+                 data-price="R$ 300.000"
+                 data-features="1 dorm|planta eficiente|boa iluminação|condomínio ok"
+                 data-img="imovel2.jpg"
+                 data-desc="1 dorm com sensação de espaço. Vista privilegiada."
+                 aria-label="Abrir imóvel: Apto 1 dorm ">
+                <div class="listing__media">
+                  <img src="imovel2.jpg" alt="Sala aconchegante em apartamento" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorm • planta eficiente</h3>
+                    <span class="price">R$ 300.000</span>
+                  </div>
+                  <p class="muted">Bosque • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorm</li>
+                    <li>bem iluminado</li>
+                    <li>cond. ok</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+              <!-- CARD 3 (OURO) -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56632"
+                 data-tags="apto 1d ate350 ouro cambui"
+                 data-title="Apto 1 dorms • custo benefício"
+                 data-neighborhood="Centro • Campinas"
+                 data-price="R$ 350.000"
+                 data-features="1 dorm|custo-benefício|boa ventilação|varanda"
+                 data-img="imovel3.png"
+                 data-desc="Para quem quer 1 dorms sem estourar o custo mensal. Boa ventilação e manutenção em dia."
+                 aria-label="Abrir imóvel: Apto 1 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel3.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorm • custo benefício</h3>
+                    <span class="price">R$ 350.000</span>
+                  </div>
+                  <p class="muted">Centro • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorm</li>
+                    <li>bem ventilado</li>
+                    <li>Varanda</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+            
+            <!-- CARD 4 -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/53056"
+                 data-tags="kitnet 1d ate350 cambui"
+                 data-title="kitnet 1 dorm • planta eficiente"
+                 data-neighborhood="Centro • Campinas"
+                 data-price="R$ 330.000"
+                 data-features="1 dorm|planta eficiente|boa iluminação|condomínio ok"
+                 data-img="imovel4.png"
+                 data-desc="1 dorm com sensação de espaço. Estrutura moderna e bem cuidada."
+                 aria-label="Abrir imóvel: Apto 1 dorm ">
+                <div class="listing__media">
+                  <img src="imovel4.png" alt="Sala aconchegante em apartamento" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>kitnet 1 dorm • planta eficiente</h3>
+                    <span class="price">R$ 330.000</span>
+                  </div>
+                  <p class="muted">Centro • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorm</li>
+                    <li>bem iluminado</li>
+                    <li>cond. ok</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            
+
+             <!-- CARD 5 -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/54024"
+                 data-tags="apto 2d ate350 cambui"
+                 data-title="Apto 2 dorms • Espaçoso"
+                 data-neighborhood="Centro • Campinas"
+                 data-price="R$ 350.000"
+                 data-features="2 dorms|Espaçoso|boa ventilação|pronto p/ morar"
+                 data-img="imovel5.png"
+                 data-desc="Para quem quer 2 dorms sem se preocupar com espaço. Boa ventilação e manutenção em dia."
+                 aria-label="Abrir imóvel: Apto 2 dorms Espaçoso">
+                <div class="listing__media">
+                  <img src="imovel5.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 2 dorms • Espaçoso</h3>
+                    <span class="price">R$ 350.000</span>
+                  </div>
+                  <p class="muted">Centro • Campinas</p>
+                  <ul class="meta">
+                    <li>2 dorms</li>
+                    <li>bem ventilado</li>
+                    <li>Espaçoso</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+             <!-- CARD 6 (OURO) -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56047"
+                 data-tags="apto 1d ate350 ouro cambui"
+                 data-title="Apto 1 dorm • Imóvel de Ouro"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 340.000"
+                 data-features="1 dorm|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel6.png"
+                 data-desc="Para quem quer 1 dorm com conforto e espaço de sobra. Imóvel selecionado por vista privilegiada e ótimo espaço."
+                 aria-label="Abrir imóvel: Apto 1 dorm (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel6.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorm • Imóvel de Ouro</h3>
+                    <span class="price">R$ 340.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorm</li>
+                    <li>2 Banheiros</li>
+                    <li>Vista privilegiada</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+             <!-- CARD 7 -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/55802"
+                 data-tags="apto 1d ate350 cambui"
+                 data-title="Apto 1 dorm • custo fixo baixo"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 300.000"
+                 data-features="1 dorm|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel7.png"
+                 data-desc="Para quem quer 1 dorm com uma vista linda. Boa estrutura e espaço."
+                 aria-label="Abrir imóvel: Apto 1 dorm custo fixo baixo">
+                <div class="listing__media">
+                  <img src="imovel7.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorm • custo fixo baixo</h3>
+                    <span class="price">R$ 300.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorm</li>
+                    <li>Boa estrutura</li>
+                    <li>Vista bela</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 8 (OURO) -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56385"
+                 data-tags="apto 2d ate350 ouro cambui"
+                 data-title="Apto 2 dorms • Imóvel de Ouro"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 298.000"
+                 data-features="2 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel8.png"
+                 data-desc="Para quem quer 2 dorms com conforto e espaço de sobra. Imóvel selecionado por ótima estrutura."
+                 aria-label="Abrir imóvel: Apto 2 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel8.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 2 dorms • Imóvel de Ouro</h3>
+                    <span class="price">R$ 298.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>2 dorms</li>
+                    <li>bem ventilado</li>
+                    <li>espaçoso</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 9 -->
+             <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56944"
+                 data-tags="apto 2d ate350 cambui"
+                 data-title="Apto 2 dorms • custo fixo baixo"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 300.000"
+                 data-features="2 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel9.png"
+                 data-desc="Para quem quer 2 dorms sem estourar o custo mensal. Espaço adequado e flexível."
+                 aria-label="Abrir imóvel: Apto 2 dorms custo fixo baixo">
+                <div class="listing__media">
+                  <img src="imovel9.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 2 dorms • custo fixo baixo</h3>
+                    <span class="price">R$ 300.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>2 dorms</li>
+                    <li>Espaçoso</li>
+                    <li>Confortável</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 10 (OURO) -->
+            <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/11777"
+                 data-tags="apto 2d ate350 ouro cambui"
+                 data-title="Apto 2 dorms • Imóvel de Ouro"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 340.000"
+                 data-features="2 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel10.png"
+                 data-desc="Para quem quer 2 dorms com conforto e espaço de sobra. Imóvel selecionado por espaço esperto."
+                 aria-label="Abrir imóvel: Apto 2 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel10.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 2 dorms • Imóvel de Ouro</h3>
+                    <span class="price">R$ 340.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>2 dorms</li>
+                    <li>3 Banheiros</li>
+                    <li>Espaço esperto</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 11 -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56509"
+                 data-tags="apto 1d ate350 cambui"
+                 data-title="Apto 1 dorms • custo fixo baixo"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 320.000"
+                 data-features="1 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel11.png"
+                 data-desc="Para quem quer 1 dorms sem estourar o custo mensal. Organização e praticidade de qualidade."
+                 aria-label="Abrir imóvel: Apto 1 dorms custo fixo baixo">
+                <div class="listing__media">
+                  <img src="imovel11.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • custo fixo baixo</h3>
+                    <span class="price">R$ 320.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>Praticidade</li>
+                    <li>Conforto</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 12 (OURO) -->
+            <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56622"
+                 data-tags="apto 1d ate350 ouro cambui"
+                 data-title="Apto 1 dorms • Imóvel de Ouro"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 330.000"
+                 data-features="1 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel12.png"
+                 data-desc="Para quem quer preço justo com conforto e espaço de sobra. Imóvel selecionado por custo selecionado."
+                 aria-label="Abrir imóvel: Apto 1 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel12.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • Imóvel de Ouro</h3>
+                    <span class="price">R$ 330.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>2 Banheiros</li>
+                    <li>Varanda</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 13 -->
+             <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56458"
+                 data-tags="apto 2d ate350 cambui"
+                 data-title="Apto 2 dorms • custo fixo baixo"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 270.000"
+                 data-features="2 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel13.png"
+                 data-desc="Para quem quer 2 dorms sem estourar o custo mensal. Boa ventilação e manutenção em dia."
+                 aria-label="Abrir imóvel: Apto 2 dorms custo fixo baixo">
+                <div class="listing__media">
+                  <img src="imovel13.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 2 dorms • custo fixo baixo</h3>
+                    <span class="price">R$ 270.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>2 dorms</li>
+                    <li>Conforto</li>
+                    <li>Praticidade</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 14 (OURO) -->
+            <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56765"
+                 data-tags="apto 1d ate350 ouro cambui"
+                 data-title="Apto 1 dorms • Imóvel de Ouro"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 310.000"
+                 data-features="1 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel14.png"
+                 data-desc="Para quem quer preço justo com conforto e espaço de sobra. Imóvel selecionado por custo selecionado."
+                 aria-label="Abrir imóvel: Apto 1 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel14.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • Imóvel de Ouro</h3>
+                    <span class="price">R$ 310.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 suíte</li>
+                    <li>Bem planejado</li>
+                    <li>Conforto</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 15 -->
+             <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/53248"
+                 data-tags="apto 2d ate350 cambui"
+                 data-title="Apto 2 dorms • custo selecionado"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 350.000"
+                 data-features="2 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel15.png"
+                 data-desc="Para quem quer 2 dorms sem estourar o custo mensal. Prático e seguro."
+                 aria-label="Abrir imóvel: Apto 2 dorms custo fixo baixo">
+                <div class="listing__media">
+                  <img src="imovel15.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 2 dorms • custo fixo baixo</h3>
+                    <span class="price">R$ 350.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>2 dorms</li>
+                    <li>Prático</li>
+                    <li>Pronto p/ morar</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 16 -->
+             <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/55609"
+                 data-tags="apto 1d ate350 cambui"
+                 data-title="Apto 1 dorms • Segurança e conforto"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 345.000"
+                 data-features="1 dorms|boa localização|boa ventilação|pronto p/ morar"
+                 data-img="imovel16.png"
+                 data-desc="Para quem quer 1 dorms sem estourar o custo mensal. Espaço bem pensado."
+                 aria-label="Abrir imóvel: Apto 1 dorms custo fixo baixo">
+                <div class="listing__media">
+                  <img src="imovel16.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • Boa localização</h3>
+                    <span class="price">R$ 345.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>bem ventilado</li>
+                    <li>Espaço organizado</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 17 (OURO) -->
+            <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56702"
+                 data-tags="apto 1d ate350 ouro cambui"
+                 data-title="Apto 1 dorms • Imóvel de Ouro"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 350.000"
+                 data-features="1 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel17.png"
+                 data-desc="Para quem quer preço justo com conforto e espaço de sobra. Imóvel selecionado por custo selecionado e vista privilegiada."
+                 aria-label="Abrir imóvel: Apto 1 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel17.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • Imóvel de Ouro</h3>
+                    <span class="price">R$ 350.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 suíte</li>
+                    <li>Vista privilegiada</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 18 -->
+             <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/35959"
+                 data-tags="apto 1d ate350 cambui"
+                 data-title="Apto 1 dorms • Boa localização"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 320.000"
+                 data-features="1 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel18.png"
+                 data-desc="Para quem quer 1 dorms sem estourar o custo mensal. Boa ventilação e manutenção em dia."
+                 aria-label="Abrir imóvel: Apto 1 dorms custo fixo baixo">
+                <div class="listing__media">
+                  <img src="imovel18.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • custo fixo baixo</h3>
+                    <span class="price">R$ 320.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>bem ventilado</li>
+                    <li>Espaço organizado</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 19  -->
+               <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/11567"
+                 data-tags="apto 1d ate350 cambui"
+                 data-title="Apto 1 dorms • custo fixo baixo"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 320.000"
+                 data-features="1 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel19.png"
+                 data-desc="Para quem quer 1 dorms sem estourar o custo mensal. Boa ventilação e manutenção em dia."
+                 aria-label="Abrir imóvel: Apto 1 dorms custo fixo baixo">
+                <div class="listing__media">
+                  <img src="imovel19.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge">Até 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • custo fixo baixo</h3>
+                    <span class="price">R$ 320.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>bem ventilado</li>
+                    <li>espaço confortável</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 20 (OURO) -->
+            <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56726"
+                 data-tags="apto 1d ate350 ouro cambui"
+                 data-title="Apto 1 dorms • Imóvel de Ouro"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 350.000"
+                 data-features="1 dorms|custo fixo baixo|boa ventilação|ótma vista"
+                 data-img="imovel20.png"
+                 data-desc="Para quem quer preço justo com conforto e espaço de sobra. Imóvel selecionado por custo selecionado e vista privilegiada."
+                 aria-label="Abrir imóvel: Apto 1 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel20.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • Imóvel de Ouro</h3>
+                    <span class="price">R$ 350.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 suíte</li>
+                    <li>Vista privilegiada</li>
+                    <li>Boa localização</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 21 (OURO) -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56460"
+                 data-tags="apto 1d acima350 ouro cambui"
+                 data-title="Apto 1 dorms • 2 banheiros • 1 vaga"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 415.000"
+                 data-features="1 dorms|1 vaga|varanda|lazer"
+                 data-img="imovel21.png"
+                 data-desc="Boa planta, boa luz e condomínio equilibrado. Imóvel de Ouro = custo-benefício acima da média."
+                 aria-label="Abrir imóvel: Apto 1 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel21.png" alt="Sala integrada de apartamento" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • 2 banheiros • 1 vaga</h3>
+                    <span class="price">R$ 415.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>2 banheiros</li>
+                    <li>1 vaga</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            <!-- CARD 22 -->
+              <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-cambui-campinas-sp/56562"
+                 data-tags="apto 1d acima350 cambui"
+                 data-title="Apto 1 dorm • acima 350k"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 430.000"
+                 data-features="2 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel22.png"
+                 data-desc="Para quem quer 1 dorm sem precisar se preocupar com conforto. Espaçoso e bem iluminado."
+                 aria-label="Abrir imóvel: Apto 1 dorms conforto e espaço">
+                <div class="listing__media">
+                  <img src="imovel22.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--alt">Acima de R$ 350k</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorm • acima 350k</h3>
+                    <span class="price">R$ 430.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>Espaçoso</li>
+                    <li>Reformado</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>  
+
+              <!-- CARD 23 (OURO) -->
+            <a class="listing" href="#"
+                 data-url="https://www.zeloimoveis.com/imovel/apartamento-a-venda-centro-campinas-sp/57201"
+                 data-tags="apto 1d ate350 ouro cambui"
+                 data-title="Apto 1 dorms • Imóvel de Ouro"
+                 data-neighborhood="Cambuí • Campinas"
+                 data-price="R$ 340.000"
+                 data-features="1 dorms|custo fixo baixo|boa ventilação|pronto p/ morar"
+                 data-img="imovel23.png"
+                 data-desc="Para quem quer preço justo com conforto e espaço de sobra. Imóvel selecionado por custo selecionado."
+                 aria-label="Abrir imóvel: Apto 1 dorms (Imóvel de Ouro)">
+                <div class="listing__media">
+                  <img src="imovel23.png" alt="Sala de apartamento bem iluminada" loading="lazy" />
+                  <span class="badge badge--gold">Imóvel de Ouro 🏅</span>
+                </div>
+                <div class="listing__body">
+                  <div class="listing__top">
+                    <h3>Apto 1 dorms • Imóvel de Ouro</h3>
+                    <span class="price">R$ 340.000</span>
+                  </div>
+                  <p class="muted">Cambuí • Campinas</p>
+                  <ul class="meta">
+                    <li>1 dorms</li>
+                    <li>2 Banheiros</li>
+                    <li>Espaço confortável</li>
+                  </ul>
+                  <span class="linkish">Ver detalhes <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Próximo" data-carousel-next>›</button>
+        </div>
+
+        <div class="section__foot">
+          <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=5519981611842&amp;text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20a%20respeito%20da%20campanha%20da%20curadoria%20do%20Cambu%C3%AD.">Receber opções pelo WhatsApp</a>
+          <a class="btn btn--ghost" href="#como-funciona">Entender como funciona</a>
+        </div>
+      </div>
+    </section>  
+
+    <!-- COMO FUNCIONA -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section__head">
+          <h2>Como funciona</h2>
+          <p>Processo simples. Informações claras. Resultados inteligentes.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step card--hover">
+            <span class="step__n">01</span>
+            <h3>Busque nos imóveis</h3>
+            <p>Primeiro, acesse os imóveis disponíveis.</p>
+          </div>
+
+          <div class="step card--hover">
+            <span class="step__n">02</span>
+            <h3>Procure as melhores opções</h3>
+            <p>Escolha os que fazem sentido real para você.</p>
+          </div>
+
+          <div class="step card--hover">
+            <span class="step__n">03</span>
+            <h3>Análise flexível</h3>
+            <p>Nós validamos seu perfil e organizamos a visita.</p>
+          </div>
+
+          <div class="step card--hover">
+            <span class="step__n">04</span>
+            <h3>Negociação inteligente</h3>
+            <p>Negociamos com estratégia para você comprar bem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEAD -->
+     <!-- OPCIONAL. CASO DIRETORIA DESEJE, DESCOMENTAR SESSÃO -->
+    <!-- <section class="section section--cta" id="lead">
+      <div class="container cta">
+        <div class="cta__copy">
+          <h2>Quer receber nossa seleção do Cambuí?</h2>
+          <p>
+            Preencha o formulário. Se possível, informe: <strong>tipo, preferências e o que você não abre mão</strong>.
+          </p>
+
+          <div class="cta__bullets">
+            <div class="check">✅ Sem spam; apenas comunicações relevantes.</div>
+            <div class="check">✅ Seleção até R$ 350 mil, no Cambuí.</div>
+            <div class="check">✅ Destaque para os Imóveis de Ouro.</div>
+          </div>
+        </div>
+
+        <form class="form" id="leadForm" novalidate>
+          <div class="form__row">
+            <label>
+              Nome
+              <input type="text" name="name" autocomplete="name" placeholder="Seu nome" required />
+            </label>
+            <label>
+              WhatsApp
+              <input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="(DDD) 9xxxx-xxxx" required />
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label>
+              Tipo desejado
+              <select name="type" required>
+                <option value="">Selecionar</option>
+                <option value="Studio">Studio</option>
+                <option value="1 dorm">1 dormitório</option>
+                <option value="2 dorms">2 dormitórios</option>
+                <option value="Tanto faz">Gostaria de uma recomendação</option>
+              </select>
+            </label>
+
+            <label>
+              Prioridade
+              <select name="priority" required>
+                <option value="">Selecionar</option>
+                <option value="Morar agora">Morar agora</option>
+                <option value="Morar em até 3 meses">Morar em até 3 meses</option>
+                <option value="Investimento / locação">Investimento / locação</option>
+                <option value="Só pesquisando (com critério)">Gostaria de pesquisar mais</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            O que você não abre mão?
+            <textarea name="must" rows="3" placeholder="Ex.: 1 vaga, elevador, sol da manhã, baixo condomínio, varanda..." required></textarea>
+          </label>
+
+          <div class="form__actions">
+            <button class="btn btn--primary" type="submit">
+              Enviar e receber opções
+              <span class="btn__icon" aria-hidden="true">→</span>
+            </button>
+            <p class="form__hint">
+              Ao enviar, você autoriza o contato para atendimento da campanha.
+            </p>
+          </div>
+
+          <div class="form__toast" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section> -->
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>Perguntas frequentes</h2>
+          <p>Perguntas e respostas para quem busca imóvel no Cambuí.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>O que significa “Imóvel de Ouro”?</summary>
+            <div class="faq__content">
+              <p>É o selo para opções que se destacam pelo equilíbrio entre custo-benefício, liquidez e localização.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Esses imóveis realmente estão abaixo de R$350 mil?</summary>
+            <div class="faq__content">
+              <p>Sim. Trabalhamos com recorte real de preço e atualizamos constantemente.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Vocês analisam documentação?</summary>
+            <div class="faq__content">
+              <p>Sim. Antes de avançar para proposta, fazemos validação jurídica e técnica.</p>
+            </div>
+          </details>
+          
+          <details class="faq__item">
+            <summary>Posso financiar?</summary>
+            <div class="faq__content">
+              <p> Sim, e analisamos se a parcela faz sentido dentro do seu orçamento antes de qualquer passo.</p>
+            </div>
+          </details>
+
+        </div>
+
+        <!-- SE OUVER NECESSIDADE: -->
+          <!-- <details class="faq__item">
+            <summary>Por que há imóveis acima de R$ 350 mil?</summary>
+            <div class="faq__content">
+              <p>Selecionamos opções acima da faixa de R$ 350 mil pois consideramos a qualidade e o custo-benefício de imóveis na mesma faixa, oferecendo mais opções de qualidade.</p>
+            </div>
+          </details>
+        </div> -->
+
+        <div class="section__foot">
+          <a class="btn btn--ghost" href="#top">Voltar ao topo</a>
+          <a class="btn btn--primary"
+             href="https://api.whatsapp.com/send?phone=5519981611842&amp;text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20personalizado%20a%20respeito%20da%20campanha%20da%20curadoria%20do%20Cambu%C3%AD.">
+            Falar com especialista
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- FECHAMENTO -->
+<section class="section section--finale" id="fechamento">
+  <div class="container finale--center">
+
+    <h2>Você pode continuar procurando.</h2>
+
+    <p class="finale__lead">
+      Ou pode começar a encontrar.
+    </p>
+
+    <p class="finale__sub">
+      A curadoria do Cambuí está disponível agora.
+    </p>
+
+    <div class="finale__actions">
+      <a class="btn btn--primary" href="#imoveis">
+        Quero acessar os apartamentos
+        <span class="btn__icon" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Zelo Imóveis</strong>
+        <p class="muted">Curadoria Cambuí • até R$ 350 mil • foco em custo-benefício e decisão segura.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#imoveis">Curadoria</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="toTop" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <!-- Modal de detalhes do imóvel -->
+  <div class="modal" id="listingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close="1"></div>
+
+    <div class="modal__panel" role="document">
+      <button class="modal__close" type="button" aria-label="Voltar" data-close="1">↩</button>
+
+      <div class="modal__grid">
+        <div class="modal__media">
+          <img id="modalImg" src="" alt="" loading="lazy" />
+          <span class="modal__badge" id="modalBadge" hidden>Imóvel de Ouro 🏅</span>
+        </div>
+
+        <div class="modal__body">
+          <p class="modal__kicker" id="modalNeighborhood"></p>
+          <h3 id="modalTitle">Título</h3>
+
+          <div class="modal__price" id="modalPrice">R$ —</div>
+
+          <p class="modal__desc" id="modalDesc"></p>
+
+          <ul class="modal__meta" id="modalMeta"></ul>
+
+          <div class="modal__actions">
+            <!-- Whats: ícone -->
+            <a class="iconBtn iconBtn--whats" id="modalWhats" href="#" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+              <img src="social.png" alt="" class="icon icon--whats" width="20" height="20" aria-hidden="true" />
+              <span class="sr-only">WhatsApp</span>
+            </a>
+
+            <!-- Link oficial por imóvel -->
+            <a class="btn btn--primary" id="modalOfficial" href="#" target="_blank" rel="noopener">
+              Ver anúncio oficial
+              <span class="btn__icon" aria-hidden="true">→</span>
+            </a>
+              <!-- caso precise de uma setinha reserva -->
+            <!-- Fechar: setinha -->
+            <!-- <button class="iconBtn" type="button" data-close="1" aria-label="Voltar">
+              <span aria-hidden="true">↩</span>
+              <span class="sr-only">Fechar</span>
+            </button>
+          </div> -->
+
+          <small class="note">Dica: custos de condomínio afetam o financiamento. Verifique antes de decidir.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="primeiroimovel.js" defer></script>
+</body>
+</html>
